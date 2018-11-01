@@ -83,6 +83,8 @@ $fn=100;
 
  // Program Section //
 //-----------------//
+use <se/antoneliasson/2d/shapes.scad>;
+use <se/antoneliasson/operations.scad>;
 
 color("HotPink") difference() {
     bushing();
@@ -95,6 +97,11 @@ color("HotPink") difference() {
         }
     }
     groove_cut();
+    cutout_offset = 1.5;
+    linextr(bushing_length_in_millimeter)
+        mirrorYZ()
+                translate([0, -outer_diameter_in_millimeter/2, 0])
+                        triangle(inner_diameter_in_millimeter-cutout_offset, outer_diameter_in_millimeter/2);
 }
 
 
