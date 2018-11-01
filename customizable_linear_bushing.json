@@ -1,0 +1,19 @@
+{
+    "parameterSets": {
+        "shim": {
+            "$fn": "100",
+            "bushing_length_in_millimeter": "25",
+            "chamfer_angle_in_degree": "55",
+            "chamfer_radius_in_millimeter": "1",
+            "extrusion_width_in_millimeter": "0.45",
+            "groove_diameter_in_millimeter": "0",
+            "groove_distance_in_millimeter": "0",
+            "groove_length_in_millimeter": "0",
+            "inner_diameter_in_millimeter": "14",
+            "number_of_perimeters": "6",
+            "number_of_teeth": "10",
+            "outer_diameter_in_millimeter": "24"
+        }
+    },
+    "fileFormatVersion": "1"
+}
